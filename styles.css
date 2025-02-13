@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C3E36;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-container {
+    background: #1F2F28;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+}
+
+.left-column {
+    width: 35%;
+    padding: 10px;
+}
+
+.right-column {
+    width: 65%;
+    padding: 10px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.skills .progress, .languages .progress {
+    background: #555;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.skills .progress div, .languages .progress div {
+    background: #27ae60;
+    height: 10px;
+    border-radius: 5px;
+}
