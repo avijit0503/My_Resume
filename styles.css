@@ -90,7 +90,8 @@ body {
     background-image: url(bg.jpg);
 }
 
-//*photo Album Css*//
+//*
+photo Album Css
 
 .photo-album {
     margin-top: 20px;
@@ -112,10 +113,10 @@ body {
 }
 
 .album-container img {
-    width: 120px;  /* Adjust size as needed */
+    width: 120px;  //Adjust size as needed 
     height: 120px;
     border-radius: 5px;
-    object-fit: cover;  /* Ensures the image fills the box properly */
+    object-fit: cover;  // Ensures the image fills the box properly 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -125,7 +126,7 @@ body {
 
 
 
-
+*//
 
 
 /* New Album Photo*/
