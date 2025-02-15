@@ -122,3 +122,64 @@ body {
 .album-container img:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
+
+/* New Album Photo*/
+
+/* Photo Album Styling */
+.photo-album {
+    margin-top: 20px;
+    padding: 10px;
+    background: #1F2F28;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.photo-album h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Slider Container */
+.slider {
+    width: 100%;
+    height: 150px;  /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* Slide Images */
+.slides {
+    display: flex;
+    width: 500%; /* Five images */
+    animation: slideAnimation 10s infinite linear;
+}
+
+.slides img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Animation */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+
+    100% { transform: translateX(-400%); }
+}
