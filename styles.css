@@ -91,6 +91,10 @@ body {
 }
 
 
+
+
+
+
 /* Photo Album Styling */
 .photo-album {
     margin-top: 20px;
@@ -100,68 +104,43 @@ body {
     text-align: center;
 }
 
-.photo-album h3 {
-    margin-bottom: 10px;
-    color: white;
-}
-
 /* Slider Container */
 .slider {
     width: 100%;
-    height: 150px;  /* Adjust height as needed */
+    height: 200px; /* Adjust height as needed */
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Classic movie effect */
 }
 
-/* Slide Images */
+/* Slides Wrapper */
 .slides {
     display: flex;
-    width: 500%; /* Five images */
-    animation: slideAnimation 10s infinite linear;
+    width: 400%; /* 4 images */
+    animation: classicMovieScroll 20s infinite ease-in-out;
 }
 
+/* Individual Image */
 .slides img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px;
+    filter: grayscale(30%) contrast(1.2); /* Slight classic look */
 }
 
-
-/* Slider Animation - Each Photo Stays for 4 Seconds */
-@keyframes slideAnimation {
+/* Classic Movie-Style Sliding Animation */
+@keyframes classicMovieScroll {
     0% { transform: translateX(0); }
-    20% { transform: translateX(0); } /* Hold first image for 4s */
+    25% { transform: translateX(0); } /* Hold Image 1 for 5s */
 
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); } /* Hold second image for 4s */
+    30% { transform: translateX(-100%); }
+    50% { transform: translateX(-100%); } /* Hold Image 2 for 5s */
 
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); } /* Hold third image for 4s */
+    55% { transform: translateX(-200%); }
+    75% { transform: translateX(-200%); } /* Hold Image 3 for 5s */
 
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); } /* Hold fourth image for 4s */
-
-    100% { transform: translateX(-400%); } /* Hold fifth image for 4s */
+    80% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); } /* Hold Image 4 for 5s */
 }
-
-
-.slider {
-    width: 100%;
-    height: 150px; /* Adjust height as needed */
-    overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-}
-
-.slides img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-
-
-
