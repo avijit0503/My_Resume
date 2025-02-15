@@ -184,3 +184,12 @@ photo Album Css
 
     100% { transform: translateX(-400%); }
 }
+
+
+.slides {
+    display: flex;
+    width: 500%;/* Five images */
+    height: auto;
+    animation: slideAnimation 15s infinite ease-in-out;
+}
+
